@@ -1,0 +1,14 @@
+<h1>Welcome to My App</h1>
+
+<%= form_tag('/welcome/submit') do %>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
+<div id="response">
+  <% if @response.present? %>
+    <h2>Response from OpenAI:</h2>
+    <p><%= @response %></p>
+  <% end %>
+</div>
+

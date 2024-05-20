@@ -1,0 +1,919 @@
+Started GET "/" for ::1 at 2024-05-16 23:00:03 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (166.9ms)
+Started GET "/" for ::1 at 2024-05-16 23:00:27 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 24695ms (Views: 24262.8ms)
+
+
+Completed 200 OK in 1822ms (Views: 1782.9ms)
+
+
+Started GET "/" for ::1 at 2024-05-16 23:00:44 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (106.1ms)
+Completed 200 OK in 736ms (Views: 700.3ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:01:05 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B2H1IKBnhyA11oWC/ojm9cotakgQ1l26BJZ2SEq90LpyH2F3vs0cwLdeyeUmRR9pvNwbeAIGwvTa5W2WMniKtQ==", "message"=>"What is K12 education ", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 181ms
+
+
+  
+NoMethodError (undefined method `configure' for OpenAI:Module):
+  
+app/controllers/welcome_controller.rb:10:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (326.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.5ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26316.9ms)
+Started GET "/" for ::1 at 2024-05-16 23:04:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 56ms (Views: 52.9ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:04:11 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XJ56JeDMR09NNtdSlyAkLU7I96vzvGC4HN6C6XDuVycp4O5y/mbcr8++mzVP7d2xODmGm+Fs//bCrZk3CCsNKA==", "message"=>"whats is K12 Education", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 417ms
+
+
+  
+OpenAI::Client::Error (You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.9ms)
+Started GET "/" for ::1 at 2024-05-16 23:08:51 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 567ms (Views: 558.3ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:09:02 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HvCCwAbfQqVzyzed4CVh9TpKYqkhGpuwrePYYy+2OJ5rjhaXGHXZRfFDe/o46JhpTLsTmTPKBP5zkMO9V3NikQ==", "message"=>"what is K12 education", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 497ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+Started GET "/" for ::1 at 2024-05-16 23:16:00 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 29.4ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:16:06 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HA9w6TTOE3mwRDi4F/0fPVbcovmEz8Q1ji8cW64cOYhpceS+KmSImTLMdN/PMOahIC3TyZYfW3tQXAeF1tljhw==", "message"=>"K12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 365ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+Started GET "/" for ::1 at 2024-05-16 23:18:06 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 31.0ms)
+
+
+Started GET "/" for ::1 at 2024-05-16 23:18:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 24.7ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:18:11 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QgOCML1b8suCEM/yV/e/3KCcCqPFui9yYf2vpRkqJVM3fRZno/FpKwCYg5WPOkZA1m17k9dqsDy/jrR7Ye9/XA==", "message"=>"K12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 438ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.6ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:18:39 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QgOCML1b8suCEM/yV/e/3KCcCqPFui9yYf2vpRkqJVM3fRZno/FpKwCYg5WPOkZA1m17k9dqsDy/jrR7Ye9/XA==", "message"=>"K12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 357ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+Started GET "/" for ::1 at 2024-05-16 23:18:45 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 219ms (Views: 216.9ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:18:50 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55vOGDASi19Nc5sr2mbAWCDL8pxGvewB8KVHJPvzrHCS5VpPLrgQv8/710wCqznEVjqDrFRtc08u1lz6gzb2fw==", "message"=>"Da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 342ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:20:26 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55vOGDASi19Nc5sr2mbAWCDL8pxGvewB8KVHJPvzrHCS5VpPLrgQv8/710wCqznEVjqDrFRtc08u1lz6gzb2fw==", "message"=>"Da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 414ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+Started GET "/" for ::1 at 2024-05-16 23:20:31 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 249ms (Views: 247.2ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:20:34 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 340ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:22:17 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 366ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:22:50 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 417ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:22:54 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 307ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:23:04 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 335ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:23:11 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7GmNT8m5FkwaGgN6imFVrGTJP1gl6fCe1GojWPtOOxyZFxkY1xONrJiSTx1SrKwwEjhOaDc5b9AKGTiGg4thEw==", "message"=>"da", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 314ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+Started GET "/" for ::1 at 2024-05-16 23:23:16 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 27.3ms)
+
+
+Started GET "/" for ::1 at 2024-05-16 23:23:20 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.3ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:23:23 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dedRyCo9EkdJ6RPlC1bC/Gk9AGNmTUofUapYIAhi9GMAmcWfNJeJp8thX4LTmztgH8xxU3Sd1VGP2UP+cKeubA==", "message"=>"4132", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 407ms
+
+
+  
+OpenAI::Client::Error (The model `davinci` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations):
+  
+app/controllers/welcome_controller.rb:12:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+Started GET "/" for ::1 at 2024-05-16 23:26:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 260ms (Views: 251.1ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:26:27 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"avOG+FaTLhxjqrBxKjgOg+vPBlzSDh86hfkj5CC5SEofjRKvSDm1/OEi/Bby9fcfnT53bMDegHRbijg6WHwSRQ==", "message"=>"K12 Education", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 505ms
+
+
+  
+Faraday::BadRequestError (the server responded with status 400):
+  
+app/controllers/welcome_controller.rb:16:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+Started GET "/" for ::1 at 2024-05-16 23:27:51 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 31.1ms)
+
+
+Started GET "/" for ::1 at 2024-05-16 23:27:53 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 26.5ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:28:00 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZQG46USYgz0J2OLvExpczUDP3gPYRVE+S2QF+jlb6M86pK0u7j57HavL+xkgZDvQ/JOSB2xigonXovJkCA1rA==", "message"=>"K-12 Education", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 452ms
+
+
+  
+Faraday::BadRequestError (the server responded with status 400):
+  
+app/controllers/welcome_controller.rb:16:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.4ms)
+Started GET "/" for ::1 at 2024-05-16 23:33:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 40.1ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-16 23:33:29 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U0oZfbe08pECPLTZlfcuIKj1BcjioXe5FutJWzOPiTQmNI0qqR5pcYC0+L5NOte83gR0+PBx6PfImFKFS0rTOw==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 360ms
+
+
+  
+Faraday::ResourceNotFound (the server responded with status 404):
+  
+app/controllers/welcome_controller.rb:17:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
+Started GET "/" for ::1 at 2024-05-17 00:25:12 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 233ms (Views: 224.2ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 00:25:16 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jp9YhtWy0H8uLhJuUJHQVse51xVOLEmKcM8YG6KmD5H74czRyxhLn6ymXgmIXCnKsUimJVz81sSuvAPF2mNVng==", "message"=>"K", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 389ms
+
+
+  
+Faraday::ResourceNotFound (the server responded with status 404):
+  
+app/controllers/welcome_controller.rb:17:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+Started GET "/" for ::1 at 2024-05-17 09:38:05 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (130.9ms)
+Completed 200 OK in 501ms (Views: 486.9ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 09:38:25 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y9uqC8O2LbtZKfPJwPrMNQxs+wwDTAZfVW3olOb4KfgWpT5c3Ry2W9uhv64YNzWpep2KPBGcmRGLHvNKnj1z9w==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 487ms
+
+
+  
+Faraday::ResourceNotFound (the server responded with status 404):
+  
+app/controllers/welcome_controller.rb:17:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.8ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-17 09:39:09 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y9uqC8O2LbtZKfPJwPrMNQxs+wwDTAZfVW3olOb4KfgWpT5c3Ry2W9uhv64YNzWpep2KPBGcmRGLHvNKnj1z9w==", "message"=>"K-12 Edu", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 459ms
+
+
+  
+Faraday::ResourceNotFound (the server responded with status 404):
+  
+app/controllers/welcome_controller.rb:17:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+Started GET "/admin/access_customer_account" for ::1 at 2024-05-17 10:03:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/admin/access_customer_account"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (10.0ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (134.9ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (225.2ms)
+Started GET "/settings/listings" for ::1 at 2024-05-17 10:03:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/settings/listings"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.4ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.0ms)
+Started GET "/" for ::1 at 2024-05-17 17:30:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 850ms (Views: 836.2ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 17:30:45 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0lSu+tMYn3e4cUcjMOmOLC5v0Jc5EypAB6Bt2ZDEiHKnKjqtzbIElzr5C0ToJHewWJ6hpyvDtQ7Z03YH6AHSfQ==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 460ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.8ms)
+Started GET "/" for ::1 at 2024-05-17 17:35:46 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 276ms (Views: 260.3ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 17:35:52 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9n1ia3jlb6DDPezgUfAtPph6qKkK1f2hhSjMx/C+gpCDA/Y8Zk/0QEG1oIeJPdSi7ovZmRgFYu9bW9cZiHvYnw==", "message"=>"k-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 378ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.2ms)
+Started GET "/" for ::1 at 2024-05-17 17:37:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 36.4ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 17:37:40 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZe5EpeXh1kiyoRvysCzk7z5zzXbIig4SebYftzLkzrw6S1FiT0cuaBCyAgSDUoPygi+Bcnyt3aXlcOgpA7JNQ==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 362ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+Started POST "/welcome/submit" for ::1 at 2024-05-17 17:38:04 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZe5EpeXh1kiyoRvysCzk7z5zzXbIig4SebYftzLkzrw6S1FiT0cuaBCyAgSDUoPygi+Bcnyt3aXlcOgpA7JNQ==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 521ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+Started GET "/welcome" for ::1 at 2024-05-17 17:43:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.6ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (65.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.3ms)
+Started GET "/" for ::1 at 2024-05-17 17:43:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 28.0ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 17:43:23 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SoY21lgJ4Whg2cy6rIYBRbIiV52qWX/3Sjmbi4RuDEU/+KKBRqN6iOJRgN10S/jZxNMmrbiJ4LmUSoBV/KtWSg==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 614ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+Started GET "/" for ::1 at 2024-05-17 19:07:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 97ms (Views: 87.4ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 19:07:32 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ay3vVXtMEeeegwn3/KXPKDATt8wKhqcRqnTsiVCJfiIeU3sCZeaKBxwLRZAkaDa0RuLG/BhWOF90B/dXKEwkLQ==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 379ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+Started GET "/" for ::1 at 2024-05-17 20:28:29 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 52.9ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-17 20:28:37 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"16Ed1gc7tHJRgagdDp8UQF6MhwMNM1G0fkERuyc1+/+i34mBGZEvktMJ5HrWUu3cKH32Mx/jzvqgMgplX/Ch8A==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 542ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+Started GET "/" for ::1 at 2024-05-17 20:36:48 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 45.2ms)
+
+
+Started GET "/" for ::1 at 2024-05-20 09:56:05 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 249ms (Views: 239.3ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-20 09:56:10 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6HQAAxZeh3bEc3OCZNayj8LvJtjq2qv9jJ2cYbstoSudCpRUCPQclkb7P+W8G0sTtB5X6PgKNLNS7oe/w+j7JA==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 548ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.3ms)
+Started GET "/admin/access_customer_account" for ::1 at 2024-05-20 16:25:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/admin/access_customer_account"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.4ms)
+  Rendered collection of /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (27.9ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (612.5ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (63.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (6865.5ms)
+Started GET "/settings/team" for ::1 at 2024-05-20 16:26:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/settings/team"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (9.1ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (185.0ms)
+Started GET "/" for ::1 at 2024-05-20 16:35:37 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 599ms (Views: 585.8ms)
+
+
+Started POST "/welcome/submit" for ::1 at 2024-05-20 16:35:43 +0530
+Processing by WelcomeController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ii6xyCCXkqHRxLqsWk5KJHJ7W+eG/CoMWr9Ka6ay/Q1XUCWfPj0JQVNM9suCg7O4BIoq15QstUKEzFG13nenAg==", "message"=>"K-12", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 545ms
+
+
+  
+Faraday::TooManyRequestsError (the server responded with status 429):
+  
+app/controllers/welcome_controller.rb:18:in `submit'
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/shilesh/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.6ms)
